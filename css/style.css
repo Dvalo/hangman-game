@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	--theme-color: #1f212b;
+	--theme-color-dark: #12141c;
+	margin: 0;
+	font-family: 'Karla', sans-serif;
+	background-color: var(--theme-color-dark);
+	color: #d8d8d8e6;
+}
+
+.container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: var(--theme-color);
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 80%;
+	}
+}
+
+.gameText {
+	color: #7b7be2;
+	margin-top: 0;
+}
+
+.gameInstruction {
+	color: #57579e;
+}
+
+.letter,
+.letter-guess {
+	color: #ff7d46;
+	margin-right: 8px;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.letter-guess {
+	display: inline-block;
+	color: #ffda7a;
+	font-size: 20px;
+}
+
+#infoBoxes {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.infoBox_wrapper {
+	background: rgb(255 255 255 / 0.04);
+	margin-bottom: 30px;
+	padding: 7px;
+	border-radius: 2px;
+	width: 40%;
+	height: 60px;
+}
+
+.livesText,
+.usedLettersText {
+	margin-bottom: 6px;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.heart {
+	margin-right: 10px;
+	color: #fd5151;
+}
+
+#usedLetters {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+#newGameBtn {
+	display: none;
+	cursor: pointer;
+	font-family: 'Karla', sans-serif;
+	outline: none;
+	background: #2dcc70;
+	border: none;
+	color: #ffffff;
+	border-radius: 7px;
+	margin: 0 5px;
+	padding: 8px;
+	letter-spacing: 3px;
+	font-size: 16px;
+	-webkit-transition: .125s;
+	-o-transition: .125s;
+	transition: .125s;
+}
