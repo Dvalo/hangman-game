@@ -29,6 +29,9 @@ body {
 	.container {
 		width: 80%;
 	}
+	.infoBox_wrapper {
+	    width: 100% !important;
+	}
 }
 
 .gameText {
